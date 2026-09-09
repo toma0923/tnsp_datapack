@@ -1,0 +1,1 @@
+execute if score @s in matches 344 run function tnsp:tech/dash/play
