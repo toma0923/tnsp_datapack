@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-tellraw @s "北"
-=======
 #オーラ
 execute at @s run particle dust{color:[0.0,0.0,0.0],scale:0.5} ~ ~0.8 ~ 0.1 0.3 0.1 0 200
 #見た目
@@ -13,4 +10,3 @@ tnsp_lefthud \uF020\uF014\uE011\uF020\uF003\uE012\uF020\uF001\uE013\uF020\uF001\
 execute if score @s in matches 10..99 run scoreboard players add @s in 400
 execute if score @s in matches 1..9 run scoreboard players add @s in 40
 execute if score @s in matches 0 run scoreboard players add @s in 4
->>>>>>> e4754f0386ba7099ff0eea7e2ddf8421c7401a9d
