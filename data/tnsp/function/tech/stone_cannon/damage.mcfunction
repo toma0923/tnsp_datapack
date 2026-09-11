@@ -4,6 +4,8 @@
 #
 # @within function tnsp:tech/stone_cannon/tick
 
-damage @n[tag=!kt.this] 2.5 cactus
+execute if score @n[type=!tadpole,type=!block_display] kt.uuid = @s kt.uuid run return 0
+
+damage @n[type=!tadpole,type=!block_display] 2.5 cactus
 
 function tnsp:tech/stone_cannon/kill
