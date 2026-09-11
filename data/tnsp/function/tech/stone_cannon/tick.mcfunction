@@ -17,5 +17,5 @@ scoreboard players remove @a[scores={kt.stone_cannon_timer=1..}] kt.stone_cannon
 
 # ダメージ処理
 execute as @e[tag=kt.stone_cannon] run function tnsp:misc/search_uuid {tag:"kt.player"}
-execute as @e[tag=kt.stone_cannon] at @s positioned ~ ~-2 ~ if entity @e[dy=4,tag=!kt.this,type=!silverfish,type=!item_display] run function tnsp:tech/stone_cannon/damage
+execute as @e[tag=kt.stone_cannon] at @s positioned ~ ~-2 ~ if entity @e[dy=4,tag=!kt.this,type=!silverfish,type=!block_display] run function tnsp:tech/stone_cannon/damage
 tag @e remove kt.this
