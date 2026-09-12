@@ -8,6 +8,7 @@ execute if entity @e[tag=kt.clone] run function tnsp:misc/search_uuid {tag:"kt.c
 tag @s add kt.clone_tmp
 
 # 分身を歩かせる
+execute unless entity @e[tag=kt.this] run tag @s remove kt.clone_tmp
 execute unless entity @e[tag=kt.this] run return run function tnsp:tech/clone/kill
 execute as @n[tag=kt.this] at @s run function tnsp:tech/clone/walk
 
