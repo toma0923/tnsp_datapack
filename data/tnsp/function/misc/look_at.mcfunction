@@ -14,7 +14,7 @@ execute store result storage kt.my_dat count int 1 run scoreboard players get $c
 $execute if score $count kt.util matches ..0 run function $(func)
 execute if score $count kt.util matches ..0 run return 0
 
-particle crit ~ ~ ~
+# particle crit ~ ~ ~
 tag @s add kt.me
 $data modify storage kt.my_dat func set value "$(func)"
 execute if score $count kt.util matches 1.. if block ~ ~ ~ #tnsp:transparent positioned ^ ^-2 ^ unless entity @e[tag=!kt.me,type=!armor_stand,type=!block_display,dy=4] positioned ^ ^2 ^1 run function tnsp:misc/look_at with storage kt.my_dat
