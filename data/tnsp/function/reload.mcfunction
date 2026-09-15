@@ -15,8 +15,12 @@ scoreboard objectives add in_1 dummy
 scoreboard objectives add in_in dummy
 
 #技の調整--------------------------------------
+#体力 50=0.5ハート
+scoreboard objectives add health dummy
 #ダメージ管理
-scoreboard objectives add damage dummy
+scoreboard objectives add damege_base dummy
+scoreboard objectives add damege_personal dummy
+scoreboard objectives add damege dummy
 #クールダウン管理
 scoreboard objectives add cd dummy
 #コスト管理

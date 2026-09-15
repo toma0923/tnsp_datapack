@@ -1,0 +1,1 @@
+stopsound @a master entity.warden.emerge

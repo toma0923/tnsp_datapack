@@ -4,4 +4,4 @@
 
 scoreboard players set @a kt.uuid -1
 tag @a add kt.player
-function tnsp:sys/assign_uuid
+execute as @r run function tnsp:sys/assign_uuid
