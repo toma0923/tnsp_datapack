@@ -15,12 +15,13 @@ scoreboard objectives add in_1 dummy
 scoreboard objectives add in_in dummy
 
 #技の調整--------------------------------------
-#体力 50=0.5ハート
+#体力 100000=10ハート
 scoreboard objectives add health dummy
-#ダメージ管理
-scoreboard objectives add damege_base dummy
-scoreboard objectives add damege_personal dummy
-scoreboard objectives add damege dummy
+#ダメージ管理 50=0.5ハート 
+scoreboard objectives add damage_base dummy
+#個人倍率　単位は%(1=1%)
+scoreboard objectives add damage_personal dummy
+scoreboard objectives add damage dummy
 #クールダウン管理
 scoreboard objectives add cd dummy
 #コスト管理
@@ -32,6 +33,7 @@ scoreboard objectives add range dummy
 #10のスコア
 scoreboard objectives add number dummy
 scoreboard players set 10 number 10
+scoreboard players set 50 number 50
 
 #スニーク検知
 scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time

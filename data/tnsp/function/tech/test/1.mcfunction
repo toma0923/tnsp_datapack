@@ -1,0 +1,1 @@
+function tnsp:manage/damage/do {"tech":"test"}
