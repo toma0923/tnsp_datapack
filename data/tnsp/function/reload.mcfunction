@@ -16,7 +16,7 @@ scoreboard objectives add in_in dummy
 
 #技の調整--------------------------------------
 #ダメージ管理
-scoreboard objectives add damege dummy
+scoreboard objectives add damage dummy
 #クールダウン管理
 scoreboard objectives add cd dummy
 #コスト管理
