@@ -11,7 +11,7 @@ execute unless entity @n[tag=kt.this] run function tnsp:tech/clone/summon_clone
 tag @n[tag=kt.this] remove kt.this
 
 # # 視点の先に目的地を設定 modによる検知なし用
-execute anchored eyes run function tnsp:misc/look_at {func:"tnsp:tech/clone/summon_dest",count:30}
+execute anchored eyes positioned ^ ^ ^ run function tnsp:misc/look_at {func:"tnsp:tech/clone/summon_dest",count:30}
 
 # 視点の先に目的地を設定
 # function tnsp:tech/clone/summon_dest with storage tnsp:block_pos

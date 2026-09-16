@@ -2,7 +2,7 @@
 #
 # 頭上に岩を召喚し、落下させる
 
-execute anchored eyes run function tnsp:misc/look_at {count:15,func:"tnsp:tech/stone_pillar/summon_falling_entity"}
+execute anchored eyes positioned ^ ^ ^ run function tnsp:misc/look_at {count:15,func:"tnsp:tech/stone_pillar/summon_falling_entity"}
 
 
 playsound minecraft:entity.warden.emerge master @a ~ ~ ~ 0.3 0.5
