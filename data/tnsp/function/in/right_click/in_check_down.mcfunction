@@ -1,7 +1,11 @@
 #123(西南東)　地割
-execute if score @s in matches 123 run tnsp_fang
-#213(西東南)  泥沼
+execute if score @s in matches 123 run function tnsp:tech/fang/play
+#113(西東東)  岩砲弾
+execute if score @s in matches 113 run function tnsp:tech/stone_cannon/main
+#213(西東南)  泥沼の術
 execute if score @s in matches 213 run function tnsp:tech/doronuma/main
+#413(西東北)　岩落としの術
+execute if score @s in matches 413 run function tnsp:tech/stone_pillar/main
 #223(西南南)　超火球の術
 execute if score @s in matches 223 run function tnsp:tech/goukakyu/play
 #232(南西南)　岩壁の術
