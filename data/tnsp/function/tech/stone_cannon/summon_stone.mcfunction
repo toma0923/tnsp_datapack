@@ -12,7 +12,7 @@ scoreboard players operation @n[tag=kt.baby_stone_cannon] kt.uuid = @s kt.uuid
 scoreboard players operation @n[tag=kt.baby_tadpole_under_cannon] kt.uuid = @s kt.uuid
 
 # 岩砲弾の発射
-execute positioned 0.000 0.000 0.000 unless entity @e[tag=kt.for_stone_cannon] run summon marker ^ ^ ^3 {Tags:[kt.for_stone_cannon]}
+execute positioned 0.000 0.000 0.000 unless entity @e[tag=kt.for_stone_cannon] run summon marker ^ ^ ^2 {Tags:[kt.for_stone_cannon]}
 data modify entity @n[tag=kt.baby_tadpole_under_cannon] Motion set from entity @n[tag=kt.for_stone_cannon] Pos
 
 kill @e[tag=kt.for_stone_cannon]
