@@ -1,1 +1,1 @@
-say ver1.0
+tellraw @s {"text":"1.1"}
