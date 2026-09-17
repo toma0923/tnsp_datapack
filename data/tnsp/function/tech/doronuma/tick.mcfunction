@@ -16,7 +16,7 @@ execute as @e[tag=kt.doronuma,tag=kt.this,scores={kt.timer=600..}] at @s run sum
 execute as @e[tag=kt.doronuma,tag=kt.this] if score @s kt.timer matches 600.. at @s run kill @s
 
 # 泥沼内の敵に鈍足付与
-execute as @a run attribute @s jump_strength base set 0.42
+execute as @e[tag=kt.doronuma,tag=kt.this] at @s if entity @p[distance=..1] run attribute @p[distance=..1] jump_strength base set 0.42
 execute as @e[tag=kt.doronuma,tag=kt.this] at @s if entity @p[distance=..1] run function tnsp:tech/doronuma/slow
 
 tag @e remove kt.this
