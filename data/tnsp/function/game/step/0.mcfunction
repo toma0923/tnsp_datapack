@@ -14,6 +14,8 @@ tag @a remove spectator
 tag @a remove player
 tag @e[type=item_display,tag=start_camera_2] remove player_done
 team leave @a
+tag @a remove actor
+tag @a remove hit
 
 
 #エンティティのキル
@@ -21,3 +23,6 @@ kill @e[tag=game_clone]
 kill @e[tag=start_camera_2_player]
 kill @e[tag=start_camera_2_player2]
 kill @e[tag=start_camera_2_player3]
+
+#スコアのリセット
+scoreboard players set @a damage_personal 100

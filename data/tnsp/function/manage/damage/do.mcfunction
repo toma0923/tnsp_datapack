@@ -14,5 +14,5 @@ execute as @a[tag=hit] if score @s health matches ..0 run tellraw @a [{"selector
 
 #ダメージのスコアに0.02をかけダメージを与える
 $execute store result storage tnsp:manage damage float 0.0002 run scoreboard players get $(tech) damage
-execute as @a[tag=hit] at @s run function tnsp:manage/damage/check with storage tnsp:manage
+execute as @e[tag=hit] at @s run function tnsp:manage/damage/check with storage tnsp:manage
 
