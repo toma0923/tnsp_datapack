@@ -1,1 +1,1 @@
-execute if score @s in matches 344 run function tnsp:tech/dash/play
+execute if score @s in matches 344 if score @s cd_dash matches ..0 run function tnsp:tech/dash/play

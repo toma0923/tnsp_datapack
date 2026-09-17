@@ -1,0 +1,11 @@
+scoreboard players remove @a cd_senketsu 1
+scoreboard players remove @a cd_goukakyu 1
+scoreboard players remove @a cd_fang 1
+scoreboard players remove @a cd_ahriw 1
+scoreboard players remove @a cd_clone 1
+scoreboard players remove @a cd_dash 1
+scoreboard players remove @a cd_doronuma 1
+scoreboard players remove @a cd_stone_cannon 1
+scoreboard players remove @a cd_stone_pillar 1
+scoreboard players remove @a cd_wall 1
+scoreboard players remove @a cd_wing 1

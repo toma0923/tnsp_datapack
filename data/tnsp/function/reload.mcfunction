@@ -23,9 +23,9 @@ scoreboard objectives add damage_base dummy
 scoreboard objectives add damage_personal dummy
 scoreboard objectives add damage dummy
 #クールダウン管理
-scoreboard objectives add cd dummy
+function tnsp:cd/reload
 #コスト管理
-scoreboard objectives add cd dummy
+scoreboard objectives add cost dummy
 #効果範囲管理
 scoreboard objectives add range dummy
 
