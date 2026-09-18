@@ -25,15 +25,18 @@ scoreboard objectives add damage dummy
 #クールダウン管理
 function tnsp:cd/reload
 #コスト管理
-scoreboard objectives add cost dummy
+scoreboard objectives add mp dummy
 #効果範囲管理
 scoreboard objectives add range dummy
 
 
-#10のスコア
+#数字のスコア
 scoreboard objectives add number dummy
 scoreboard players set 10 number 10
+scoreboard players set 20 number 20
+scoreboard players set 40 number 40
 scoreboard players set 50 number 50
+
 
 #スニーク検知
 scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time

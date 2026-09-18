@@ -1,0 +1,1 @@
+$tnsp_righthud &9パクパクの術 &f\uE011\n$(goukakyu)・&c超火球の術 &f\uE012\n&f 　　幻惑の玉 &f\uE013\n$(senketsu)・・・・&0穿血 &f\uE014

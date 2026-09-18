@@ -5,9 +5,6 @@ function tnsp:cd/remove
 #game進行
 function tnsp:game/main
 
-
-
-
 #印
 scoreboard players add @a in_in 1
 execute as @a if score @s in_in matches 10 run tnsp_pose reset
@@ -35,6 +32,13 @@ execute as @a at @s run function tnsp:tech/stone_pillar/tick
 
 execute as @a if score @s in matches 1.. at @s run function tnsp:in/display
 
+
+
+
+#test
+#execute as @a store result storage tnsp:test cd int 1 run scoreboard players get @s cd_fang
+#execute as @a at @s run function tnsp:test with storage tnsp:test
+execute as @a run function tnsp:in/display/righthud/do
 
 
 #リセット
