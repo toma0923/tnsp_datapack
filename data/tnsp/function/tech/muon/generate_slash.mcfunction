@@ -31,3 +31,4 @@ scoreboard players set @n[tag=kt.baby_muon_slash] kt.timer 0
 
 tag @e remove kt.baby_muon_slash
 tag @e remove kt.baby_muon_slash_display
+tag @s remove kt.muon

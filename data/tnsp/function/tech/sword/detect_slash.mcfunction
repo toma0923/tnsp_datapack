@@ -15,5 +15,5 @@ tag @e remove kt.baby_detect_slash
 execute anchored eyes run tp @n[tag=kt.detect_slash] ^ ^-0.5 ^0.5
 
 # 殴ったことを検知
-execute if data entity @n[tag=kt.detect_slash] attack run function tnsp:tech/muon/generate_slash
+execute if data entity @n[tag=kt.detect_slash] attack run function tnsp:tech/sword/activate
 execute if data entity @n[tag=kt.detect_slash] attack run function tnsp:tech/sword/kill
