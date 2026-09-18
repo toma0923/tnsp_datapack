@@ -1,4 +1,6 @@
 
+#クールダウン減らす
+function tnsp:cd/remove
 
 #game進行
 function tnsp:game/main
@@ -9,7 +11,7 @@ function tnsp:game/main
 #印
 scoreboard players add @a in_in 1
 execute as @a if score @s in_in matches 10 run tnsp_pose reset
-execute as @a if score @s in_in matches 10 run tnsp_lefthud \n\uF020\uF014\uE011\uF020\uF003\uE012\uF020\uF001\uE013\uF020\uF001\uE014\n\uE021\uF001\uE022\uF002\uE023\uF002\uE024
+execute as @a if score @s in_in matches 10 run tnsp_lefthud \n\uE021\uF001\uE022\uF002\uE023\uF002\uE024\n\uF020\uF015\uF011\uE011\uF015\uF015\uF011\uE012\uF020\uF012\uE013\uF020\uF012\uE014
 
 #スニーク関連
 execute as @a at @s if score @s sneak matches 1.. run function tnsp:in/sneak/play

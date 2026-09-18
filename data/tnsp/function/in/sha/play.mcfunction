@@ -4,7 +4,7 @@ execute at @s run particle dust{color:[1.0,1.0,1.0],scale:0.5} ~ ~0.8 ~ 0.1 0.3 
 scoreboard players set @s in_in 0
 tnsp_pose crossbow
 playsound minecraft:block.bone_block.place player @s ~ ~ ~ 1 1
-tnsp_lefthud \n\uF020\uF014\uE011\uF020\uF003\uE012\uF020\uF001\uE013\uF020\uF001\uE014\n\uE021\uF001\uE022\uF002\uE033\uF002\uE024
+tnsp_lefthud \n\uE021\uF001\uE022\uF002\uE033\uF002\uE024\n\uF020\uF015\uF011\uE011\uF015\uF015\uF011\uE012\uF020\uF012\uE013\uF020\uF012\uE014
 
 #スコア設定
 execute if score @s in matches 10..99 run scoreboard players add @s in 300

@@ -26,3 +26,4 @@ kill @e[tag=start_camera_2_player3]
 
 #スコアのリセット
 scoreboard players set @a damage_personal 100
+scoreboard players set @a health 100

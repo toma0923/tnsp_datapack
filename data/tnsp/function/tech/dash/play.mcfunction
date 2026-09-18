@@ -2,7 +2,7 @@
 
 
 tag @s add can_dash
-
+scoreboard players set @s cd_dash 100
 
 
 
