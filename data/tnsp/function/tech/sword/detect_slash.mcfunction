@@ -12,8 +12,10 @@ scoreboard players operation @n[tag=kt.baby_detect_slash] kt.uuid = @s kt.uuid
 tag @e remove kt.baby_detect_slash
 
 # 検知用のinteractionを目の前にtp
-execute anchored eyes run tp @n[tag=kt.detect_slash] ^ ^-0.5 ^0.5
+execute anchored eyes run tp @n[tag=kt.this,tag=kt.detect_slash] ^ ^-0.5 ^0.5
 
 # 殴ったことを検知
-execute if data entity @n[tag=kt.detect_slash] attack run function tnsp:tech/sword/activate
-execute if data entity @n[tag=kt.detect_slash] attack run function tnsp:tech/sword/kill
+execute if data entity @n[tag=kt.detect_slash,tag=kt.this] attack run function tnsp:tech/sword/activate
+execute if data entity @n[tag=kt.detect_slash,tag=kt.this] attack run function tnsp:tech/sword/kill
+
+tag @e[tag=kt.detect_slash] remove kt.this
