@@ -1,3 +1,4 @@
+#スコアを0にリセットする用
 scoreboard players set @a cd_senketsu 0
 scoreboard players set @a cd_goukakyu 0
 scoreboard players set @a cd_fang 0
@@ -8,4 +9,3 @@ scoreboard players set @a cd_doronuma 0
 scoreboard players set @a cd_stone_cannon 0
 scoreboard players set @a cd_stone_pillar 0
 scoreboard players set @a cd_wall 0
-scoreboard players set @a cd_wing 0

@@ -3,7 +3,7 @@ execute at @s run particle dust{color:[1.0,0.0,0.0],scale:0.5} ~ ~0.8 ~ 0.1 0.3 
 #見た目
 scoreboard players set @s in_in 0
 tnsp_pose block
-playsound minecraft:block.bone_block.place player @s ~ ~ ~ 1 1
+playsound minecraft:entity.player.attack.sweep player @s ~ ~ ~ 0.5 1
 tnsp_lefthud \n\uE021\uF001\uE032\uF002\uE023\uF002\uE024\n\uF020\uF015\uF011\uE011\uF015\uF015\uF011\uE012\uF020\uF012\uE013\uF020\uF012\uE014
 
 

@@ -25,5 +25,10 @@ kill @e[tag=start_camera_2_player2]
 kill @e[tag=start_camera_2_player3]
 
 #スコアのリセット
-scoreboard players set @a damage_personal 100
-scoreboard players set @a health 100
+#待機中はダメージ0
+scoreboard players set @a damage_personal 0
+#体力を1000に
+scoreboard players set @a health 1000
+#マナの設定
+scoreboard players set @a mp 1000
+scoreboard players set @a mp_max 1000

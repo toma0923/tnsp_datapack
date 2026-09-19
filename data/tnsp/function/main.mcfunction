@@ -1,6 +1,6 @@
 
 #クールダウン減らす
-function tnsp:cd/remove
+function tnsp:manage/cd/remove
 
 #game進行
 function tnsp:game/main
@@ -40,7 +40,13 @@ execute as @a if score @s in matches 1.. at @s run function tnsp:in/display
 #test
 #execute as @a store result storage tnsp:test cd int 1 run scoreboard players get @s cd_fang
 #execute as @a at @s run function tnsp:test with storage tnsp:test
+#技の予測変換
 execute as @a run function tnsp:in/display/righthud/do
+#マナの表示
+execute as @a if score @s mp < @s mp_max run scoreboard players add @s mp 1
+function tnsp:manage/mp/store
+execute as @a[gamemode=creative] run tnsp_manabar_hide
+execute as @a[gamemode=spectator] run tnsp_manabar_hide
 
 
 #リセット
