@@ -21,3 +21,7 @@ execute as @a[tag=player] at @s run tp @s @e[tag=game_clone,sort=nearest,limit=1
 
 tp @e[tag=game_clone] ~ ~-250 ~
 
+#スコアの設定
+scoreboard players set @a mp 1000
+
+

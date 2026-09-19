@@ -1,0 +1,1 @@
+$tnsp_righthud &9・・・・・・ &f\uE011\n&c・・・・・・ &f\uE012\n$(dash) $(dash_mp)&f・・・・旋突 &f\uE013\n&0・・・・・・ &f\uE014

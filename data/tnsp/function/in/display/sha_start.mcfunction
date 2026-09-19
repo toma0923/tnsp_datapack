@@ -26,7 +26,5 @@ execute if score @s in matches 433 run title @s actionbar [{"text": "\uE005\uF00
 execute if score @s in matches 443 run title @s actionbar [{"text": "\uE005\uF002\uE003\uF001\uE004\uF001\uE004\uF001\uE006"}]
 
 
-execute if score @s in matches 23 run tnsp_righthud &9 パクパクの術 &f\uE011\n&c 超火球の術 &f\uE012\n&f 幻惑の玉 &f\uE013\n&0穿血 &f\uE014
-execute if score @s in matches 13 run tnsp_righthud &9 岩砲弾 &f\uE011\n&c 泥沼の術 &f\uE012\n&f        &f\uE013\n&0岩落としの術 &f\uE014
 
 

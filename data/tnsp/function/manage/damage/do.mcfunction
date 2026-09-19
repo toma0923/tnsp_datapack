@@ -12,7 +12,7 @@ $execute as @a[tag=hit] at @s run scoreboard players operation @s health -= $(te
 #プレイヤーの体力がなくなったら通知
 execute as @a[tag=hit] if score @s health matches ..0 run tellraw @a [{"selector": "@s"},{"text": "は"},{"selector": "@n[tag=actor]"},{"text": "に殺された"}]
 
-#ダメージのスコアに0.02をかけダメージを与える
+#ダメージのスコアに0.0002をかけダメージを与える
 $execute store result storage tnsp:manage damage float 0.0002 run scoreboard players get $(tech) damage
 execute as @e[tag=hit] at @s run function tnsp:manage/damage/check with storage tnsp:manage
 

@@ -1,10 +1,12 @@
 
 
 
-tag @s add can_dash
-scoreboard players set @s cd_dash 100
+execute as @s if score @s mp >= dash mp run tag @s add can_dash
 
 
+#MPが足りない時
+execute as @s if score @s mp < dash mp run title @s actionbar [{"text": "MPが足りない!","color": "red"}]
+execute as @s at @s if score @s mp < dash mp run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 10 0.3
 
 
 
