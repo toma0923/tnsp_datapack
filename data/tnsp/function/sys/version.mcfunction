@@ -1,1 +1,1 @@
-tellraw @s {"text":"2.0"}
+tellraw @s {"text":"2.2"}

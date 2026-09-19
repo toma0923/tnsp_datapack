@@ -22,7 +22,7 @@ execute if score $count kt.util matches 1.. if block ~ ~ ~ #tnsp:transparent pos
 tag @s add kt.me
 $execute unless block ~ ~ ~ #tnsp:transparent run function $(func)
 execute unless block ~ ~ ~ #tnsp:transparent run return run tag @s remove kt.me
-$execute positioned ~ ~-2 ~ if entity @e[tag=!kt.me,type=!armor_stand,type=!block_display,type=!item_display,dy=4] run function $(func)
+$execute positioned ~ ~-2 ~ if entity @e[tag=!kt.me,type=!#tnsp:develop,dy=4] run function $(func)
 tag @s remove kt.me
 
 # setblock ~ ~ ~ dirt
