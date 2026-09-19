@@ -9,3 +9,7 @@ scoreboard players set @a cd_doronuma 0
 scoreboard players set @a cd_stone_cannon 0
 scoreboard players set @a cd_stone_pillar 0
 scoreboard players set @a cd_wall 0
+scoreboard players set @a cd_heal_big 0
+scoreboard players set @a cd_heal_mid 0
+scoreboard players set @a cd_heal_small 0
+scoreboard players set @a cd_heal_mana 0

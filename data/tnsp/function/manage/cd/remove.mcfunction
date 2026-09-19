@@ -18,8 +18,14 @@ execute as @a if score @s cd_stone_cannon matches 0.. run function tnsp:manage/c
 execute as @a if score @s cd_stone_pillar matches 0.. run function tnsp:manage/cd/tech/stone_pillar
 #壁
 execute as @a if score @s cd_wall matches 0.. run function tnsp:manage/cd/tech/wall
-
-
+#ヒール大
+execute as @a if score @s cd_heal_big matches 0.. run function tnsp:manage/cd/tech/heal_big
+#ヒール中
+execute as @a if score @s cd_heal_mid matches 0.. run function tnsp:manage/cd/tech/heal_mid
+#ヒール小
+execute as @a if score @s cd_heal_small matches 0.. run function tnsp:manage/cd/tech/heal_small
+#ヒール小
+execute as @a if score @s cd_heal_mana matches 0.. run function tnsp:manage/cd/tech/heal_mana
 
 
 

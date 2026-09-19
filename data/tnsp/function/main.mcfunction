@@ -41,6 +41,7 @@ execute as @a if score @s in matches 1.. at @s run function tnsp:in/display
 #execute as @a store result storage tnsp:test cd int 1 run scoreboard players get @s cd_fang
 #execute as @a at @s run function tnsp:test with storage tnsp:test
 #技の予測変換
+function tnsp:manage/mp/hud_mana_set
 execute as @a run function tnsp:in/display/righthud/do
 #マナの表示
 execute as @a if score @s mp < @s mp_max run scoreboard players add @s mp 1

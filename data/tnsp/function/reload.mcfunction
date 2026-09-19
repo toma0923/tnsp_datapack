@@ -17,6 +17,7 @@ scoreboard objectives add in_in dummy
 #技の調整--------------------------------------
 #体力 1000=10ハート
 scoreboard objectives add health dummy
+scoreboard objectives add health_max dummy
 #ダメージ管理 50=0.5ハート 
 scoreboard objectives add damage_base dummy
 #個人倍率　単位は%(1=1%)
