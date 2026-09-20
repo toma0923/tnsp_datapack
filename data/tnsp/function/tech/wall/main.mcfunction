@@ -1,6 +1,8 @@
 #> tnsp:tech/wall/main.mcfunction
 #
 # 壁を出し、投擲物から身を守る
+#
+# @within func tnsp:in/right_click/in_check_down
 
 #MPが足りない時
 execute unless entity @s[tag=kt.debug] if score @s mp < wall mp run title @s actionbar [{"text": "MPが足りない!","color": "red"}]

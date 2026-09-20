@@ -8,6 +8,7 @@
     "minecraft:painting",
     "minecraft:item_frame",
     "minecraft:glow_item_frame",
-    "minecraft:mannequin"
+    "minecraft:mannequin",
+    "minecraft:wind_charge"
   ]
 }

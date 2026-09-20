@@ -42,9 +42,9 @@ scoreboard objectives add cd_wall dummy
 scoreboard players set @a cd_wall 0
 scoreboard objectives add cd_wall_s dummy
 
-scoreboard objectives add cd_wing dummy
-scoreboard players set @a cd_wing 0
-scoreboard objectives add cd_wing_s dummy
+scoreboard objectives add cd_wind dummy
+scoreboard players set @a cd_wind 0
+scoreboard objectives add cd_wind_s dummy
 
 scoreboard objectives add cd_sword dummy
 scoreboard players set @a cd_sword 0

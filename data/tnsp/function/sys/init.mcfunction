@@ -8,6 +8,7 @@ scoreboard objectives add kt.uuid dummy
 scoreboard objectives add kt.util dummy
 scoreboard objectives add kt.timer dummy
 scoreboard objectives add kt.stone_cannon_timer dummy
+scoreboard objectives add kt.wind_charge_count dummy
 scoreboard objectives add kt.detect_jump custom:jump
 
 data modify storage kt.my_dat _ set value 0
