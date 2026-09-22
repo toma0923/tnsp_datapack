@@ -2,9 +2,10 @@
 #
 # ウィンドチャージを発射する
 
-execute if entity @e[tag=kt.wind_center,distance=..5] run scoreboard players set @s kt.wind_charge_count 2
-execute if entity @e[tag=kt.wind_center,distance=..5] run scoreboard players set @s kt.wind_charge_count 4
-execute if entity @e[tag=kt.wind_center,distance=..4] run scoreboard players set @s kt.wind_charge_count 6
+execute if entity @e[tag=kt.wind_center,distance=..7] run scoreboard players set @s kt.wind_charge_count 2
+execute if entity @e[tag=kt.wind_center,distance=..6] run scoreboard players set @s kt.wind_charge_count 4
+execute if entity @e[tag=kt.wind_center,distance=..5] run scoreboard players set @s kt.wind_charge_count 6
+execute if entity @e[tag=kt.wind_center,distance=..4] run scoreboard players set @s kt.wind_charge_count 7
 execute if entity @e[tag=kt.wind_center,distance=..3] run scoreboard players set @s kt.wind_charge_count 8
 execute if entity @e[tag=kt.wind_center,distance=..2] run scoreboard players set @s kt.wind_charge_count 10
 execute if entity @e[tag=kt.wind_center,distance=..1] run scoreboard players set @s kt.wind_charge_count 12

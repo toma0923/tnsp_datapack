@@ -22,6 +22,6 @@ execute if entity @e[scores={kt.timer=100..},tag=kt.clone,tag=kt.this] run funct
 
 tag @s remove kt.clone_tmp
 
-execute as @e[tag=kt.clone_dest] at @s run particle cloud ~ ~ ~
+# execute as @e[tag=kt.clone_dest] at @s run particle cloud ~ ~ ~
 
 tag @e remove kt.this

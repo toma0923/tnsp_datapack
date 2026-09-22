@@ -31,6 +31,7 @@ execute as @a at @s run function tnsp:tech/stone_cannon/tick
 execute as @a at @s run function tnsp:tech/stone_pillar/tick
 execute as @a at @s run function tnsp:tech/sword/tick
 execute as @a at @s run function tnsp:tech/muon/tick
+execute as @a[tag=kt.shop_debug] at @s run function tnsp:shop/tick
 
 execute as @a if score @s in matches 1.. at @s run function tnsp:in/display
 

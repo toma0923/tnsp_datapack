@@ -22,6 +22,6 @@ execute if score $count kt.util matches 1.. if block ~ ~ ~ #tnsp:transparent pos
 tag @s add kt.me
 $execute unless block ~ ~ ~ #tnsp:transparent run function $(func)
 execute unless block ~ ~ ~ #tnsp:transparent run return run tag @s remove kt.me
-$execute positioned ~ ~-2 ~ if entity @e[tag=!kt.me,type=!#tnsp:develop,dy=4] run function $(func)
-execute positioned ~ ~-2 ~ if entity @e[tag=!kt.me,type=!#tnsp:develop,dy=4] run say @e[tag=!kt.me,type=!#tnsp:develop,dy=4]
+$execute positioned ~ ~-2 ~ if entity @e[tag=!kt.me,type=!#tnsp:develop,type=!mannequin,dy=4] run function $(func)
+# execute positioned ~ ~-2 ~ if entity @e[tag=!kt.me,type=!#tnsp:develop,type=!mannequin,dy=4] run say @e[tag=!kt.me,type=!#tnsp:develop,dy=4]
 tag @s remove kt.me
