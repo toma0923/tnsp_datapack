@@ -50,6 +50,13 @@ function tnsp:manage/mp/store
 execute as @a[gamemode=creative] run tnsp_manabar_hide
 execute as @a[gamemode=spectator] run tnsp_manabar_hide
 
+# シールド処理
+execute as @a run function tnsp:manage/sheild/tick
+
+# オーグメント処理
+execute as @a[tag=kt.augment10] run function tnsp:augment/augment10
+scoreboard players set @a[tag=!kt.augment10] kt.cd_augment10 0
+execute as @a[tag=!kt.augment9,tag=kt.detect_reset_aug9] run function tnsp:augment/augment9 {reset:1}
 
 #リセット
 

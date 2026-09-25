@@ -34,10 +34,15 @@ scoreboard objectives add range dummy
 
 #数字のスコア
 scoreboard objectives add number dummy
+scoreboard players set 3 number 3
+scoreboard players set 5 number 5
+scoreboard players set 6 number 6
 scoreboard players set 10 number 10
 scoreboard players set 20 number 20
 scoreboard players set 40 number 40
 scoreboard players set 50 number 50
+scoreboard players set 100 number 100
+scoreboard players set 400 number 400
 
 
 #スニーク検知
@@ -60,4 +65,3 @@ scoreboard objectives add look_z dummy
 
 #分身
 function tnsp:sys/init
-function tnsp:sys/when_start

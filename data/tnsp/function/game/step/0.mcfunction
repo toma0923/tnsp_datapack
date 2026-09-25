@@ -33,3 +33,5 @@ scoreboard players set @a health_max 1000
 #マナの設定
 scoreboard players set @a mp 1000
 scoreboard players set @a mp_max 1000
+
+function tnsp:sys/when_start

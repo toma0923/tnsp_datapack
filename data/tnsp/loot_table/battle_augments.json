@@ -12,6 +12,30 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:1}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "相手のHPがハート5つ以下のとき、",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "ダメージ30%増加",
+                  "color": "gray",
+                  "italic": false                  
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "エクセキュート",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -23,6 +47,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:2}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "ダメージを受けると50マナを回復する",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "No Pain No Gain",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -34,6 +77,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:3}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "ダメージを与えると体力を少し回復する",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ライフスティール",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -45,6 +107,30 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:4}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "ダメージを与えると30%の確率で",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "2秒間鈍足を与える",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "膝カックン",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -56,6 +142,30 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:5}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "自分の現在体力が多いほど与える",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "ダメージが増加する(ハート1つにつき2%増加)",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ヘビーヒッター",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -67,6 +177,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:6}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "ダメージを与えた相手の体力とマナがわかる",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "虫眼鏡",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -78,6 +207,35 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:7}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "敵を倒すたびにスタックを獲得し、無限にスタックする。",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "スタックごとに最大体力とサイズが増加する。",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "死亡時にスタックの60%を失う",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "タンクエンジン",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -89,6 +247,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:8}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "最大mpの3%に等しいスキルヘイストを得る",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "エウレカ",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -100,6 +277,30 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:9}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "このオーグメントを取得した時およびリスポーンするたびに",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "一時的な体力ハート4つ、サイズ40%増加、スキルヘイスト40増加、移動速度40%増加、サイズ40%減少、MP500のどれかを得る",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "狂気の化学者",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -111,149 +312,35 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:10}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:guster_pottery_sherd",
-          "weight": 1,
-          "functions": [
+            },
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:11}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:heart_pottery_sherd",
-          "weight": 1,
-          "functions": [
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "体力がハート3つ以下になると一時体力ハート4つ、",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "移動速度2を5秒得る",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "CD: 55秒",
+                  "color": "dark_gray",
+                  "italic": false
+                }
+              ]              
+            },
             {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:12}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:heartbreak_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:13}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:howl_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:14}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:miner_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:15}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:mourner_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:16}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:plenty_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:17}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:prize_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:18}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:scrape_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:19}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:sheaf_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:20}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:shelter_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:21}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:skull_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:22}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:snort_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:23}"
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "脱出プラン",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         }

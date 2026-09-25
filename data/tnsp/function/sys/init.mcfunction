@@ -13,6 +13,12 @@ scoreboard objectives add kt.wind_charge_count dummy
 scoreboard objectives add kt.gold dummy
 scoreboard objectives add kt.mission_num dummy
 scoreboard objectives add kt.detect_jump custom:jump
+scoreboard objectives add kt.tank_engine dummy
+scoreboard objectives add kt.size dummy
+scoreboard objectives add kt.speed dummy
+scoreboard objectives add kt.sheild dummy
+scoreboard objectives add kt.sheild_timer dummy
+scoreboard objectives add kt.cd_augment10 dummy
 
 scoreboard objectives add kt.stats_aqua dummy "STATS"
 scoreboard objectives add kt.stats_black dummy "STATS"

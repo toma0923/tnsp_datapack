@@ -6,122 +6,31 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:angler_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:1}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:archer_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:2}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:arms_up_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:3}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:blade_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:4}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:brewer_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:5}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:burn_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:6}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:danger_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:7}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:explorer_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:8}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:flow_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:9}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:friend_pottery_sherd",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{augment_num:10}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:guster_pottery_sherd",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:11}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "与えたダメージハート1つにつき、10G入手",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ファーストストライク",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -133,6 +42,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:12}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "ミッションでもらえるゴールドが100%増加",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "有能エージェント",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -144,6 +72,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:13}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "毎秒もらえるゴールドが100%増加",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "不労所得",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -155,6 +102,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:14}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "敵をキルしたときに追加で100G入手",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "略奪者",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },
@@ -166,6 +132,25 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": "{augment_num:15}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "100Gを入手し、ランダムなオーグメントに変化する",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]              
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "運命",
+                "bold": true,
+                "italic": false                
+              }
             }
           ]
         },

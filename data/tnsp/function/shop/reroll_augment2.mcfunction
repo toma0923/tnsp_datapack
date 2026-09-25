@@ -44,6 +44,11 @@ $execute if score @s kt.reroll_augment_timer matches 6 at @s run item replace en
 $execute if score @s kt.reroll_augment_timer matches 3 at @s run item replace entity @s container.$(slot3) with red_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={shop:1b}]
 $execute if score @s kt.reroll_augment_timer matches 0 at @s run item replace entity @s container.$(slot3) with magenta_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={shop:1b}]
 
+execute if score @s kt.reroll_augment_timer matches -60 at @s run item replace entity @s container.20 with creeper_spawn_egg[custom_name={"bold":true,"color":"gold","italic":false,"text":"戦闘系オーグメントを引く"},lore=[{"color":"gold","italic":false,"text":"200G"}],custom_data={"battle_augment":1b,"shop":1b}] 1
+execute if score @s kt.reroll_augment_timer matches -60 at @s run item replace entity @s container.24 with wandering_trader_spawn_egg[custom_name={"bold":true,"color":"gold","italic":false,"text":"経済系オーグメントを引く"},lore=[{"color":"gold","italic":false,"text":"200G"}],custom_data={"economy_augment":1b,"shop":1b}] 1
+scoreboard players remove @s kt.reroll_augment_timer 1
+execute if score @s kt.reroll_augment_timer matches ..-2 at @s run return 0
+
 # オーグメントガチャ
 summon armor_stand 0 0 0 {Marker:1b,Invisible:1b,Tags:[kt.for_reroll_augment]}
 execute if entity @s[tag=kt.battle_augment] run loot replace entity @n[tag=kt.for_reroll_augment] weapon loot tnsp:battle_augments
@@ -52,11 +57,13 @@ $item replace entity @s container.$(slot2) from entity @n[tag=kt.for_reroll_augm
 kill @e[tag=kt.for_reroll_augment]
 
 # スロットにオーグメントを入れる
-$execute if score @s kt.reroll_augment_timer matches 0 run function tnsp:shop/reroll_augment3 {slot:$(slot2)}
+$execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/reroll_augment3 {slot:$(slot2)}
+# オーグメントの重複をチェック
+execute if score @s kt.reroll_augment_timer matches -1 store result storage kt.my_dat augment_num int 1 run scoreboard players get $augment_num kt.util
+execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/check_dup_aug with storage kt.my_dat
 
 # オーグメントのtag付け
-function tnsp:shop/tag_augment
+execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/tag_augment
 
-execute if score @s kt.reroll_augment_timer matches 0 run tag @s remove kt.battle_augment
-execute if score @s kt.reroll_augment_timer matches 0 run tag @s remove kt.economy_augment
-scoreboard players remove @s kt.reroll_augment_timer 1
+execute if score @s kt.reroll_augment_timer matches -1 run tag @s remove kt.battle_augment
+execute if score @s kt.reroll_augment_timer matches -1 run tag @s remove kt.economy_augment
