@@ -58,6 +58,16 @@ execute as @a[tag=kt.augment10] run function tnsp:augment/augment10
 scoreboard players set @a[tag=!kt.augment10] kt.cd_augment10 0
 execute as @a[tag=!kt.augment9,tag=kt.detect_reset_aug9] run function tnsp:augment/augment9 {reset:1}
 
+# ミッション処理
+execute as @a store result score @s kt.util run data get entity @s fall_distance
+execute as @a[scores={kt.mission_num=10}] if score @s kt.util matches 50.. run function tnsp:mission/acheive_mission {mission_num:10}
+
+# ゴールド増加
+scoreboard players add @a kt.gold 1
+
+# サイドバー更新
+function tnsp:game/sidebar/tick
+
 #リセット
 
 scoreboard players set @a sneak2 0

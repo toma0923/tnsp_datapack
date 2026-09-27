@@ -1,6 +1,8 @@
 #> tnsp:sys/init.mcfunction
 #
 # 初期化
+#
+# @within func tnsp:reload
 
 forceload add 0 0 0 0
 
@@ -19,6 +21,9 @@ scoreboard objectives add kt.speed dummy
 scoreboard objectives add kt.sheild dummy
 scoreboard objectives add kt.sheild_timer dummy
 scoreboard objectives add kt.cd_augment10 dummy
+scoreboard objectives add kt.mission_kills dummy
+scoreboard objectives add kt.mission_damage dummy
+scoreboard objectives add kt.mission_walk_one_cm minecraft.custom:minecraft.walk_one_cm
 
 scoreboard objectives add kt.stats_aqua dummy "STATS"
 scoreboard objectives add kt.stats_black dummy "STATS"
@@ -28,5 +33,25 @@ scoreboard objectives add kt.stats_dark_blue dummy "STATS"
 scoreboard objectives add kt.stats_dark_gray dummy "STATS"
 scoreboard objectives add kt.stats_dark_green dummy "STATS"
 scoreboard objectives add kt.stats_dark_purple dummy "STATS"
+
+team add aqua
+team modify aqua color aqua
+team add black
+team modify black color black
+team add blue
+team modify blue color blue
+team add dark_aqua
+team modify dark_aqua color dark_aqua
+team add dark_blue
+team modify dark_blue color dark_blue
+team add dark_gray
+team modify dark_gray color dark_gray
+team add dark_green
+team modify dark_green color dark_green
+team add dark_purple
+team modify dark_purple color dark_purple
+
+function tnsp:mission/init_missions
+function tnsp:sys/init_tech_num
 
 data modify storage kt.my_dat _ set value 0

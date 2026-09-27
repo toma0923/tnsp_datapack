@@ -1,4 +1,4 @@
-#> tnsp:shop/reroll_augment2
+#> tnsp:shop/augment/reroll_augment2
 #
 # オーグメントをリロールする
 #
@@ -50,20 +50,20 @@ scoreboard players remove @s kt.reroll_augment_timer 1
 execute if score @s kt.reroll_augment_timer matches ..-2 at @s run return 0
 
 # オーグメントガチャ
-summon armor_stand 0 0 0 {Marker:1b,Invisible:1b,Tags:[kt.for_reroll_augment]}
+summon armor_stand 0 -60 0 {Marker:1b,Invisible:1b,Tags:[kt.for_reroll_augment]}
 execute if entity @s[tag=kt.battle_augment] run loot replace entity @n[tag=kt.for_reroll_augment] weapon loot tnsp:battle_augments
 execute if entity @s[tag=kt.economy_augment] run loot replace entity @n[tag=kt.for_reroll_augment] weapon loot tnsp:economy_augments
 $item replace entity @s container.$(slot2) from entity @n[tag=kt.for_reroll_augment] weapon
 kill @e[tag=kt.for_reroll_augment]
 
 # スロットにオーグメントを入れる
-$execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/reroll_augment3 {slot:$(slot2)}
+$execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/augment/reroll_augment3 {slot:$(slot2)}
 # オーグメントの重複をチェック
 execute if score @s kt.reroll_augment_timer matches -1 store result storage kt.my_dat augment_num int 1 run scoreboard players get $augment_num kt.util
-execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/check_dup_aug with storage kt.my_dat
+execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/augment/check_dup_aug with storage kt.my_dat
 
 # オーグメントのtag付け
-execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/tag_augment
+execute if score @s kt.reroll_augment_timer matches -1 run function tnsp:shop/augment/tag_augment
 
 execute if score @s kt.reroll_augment_timer matches -1 run tag @s remove kt.battle_augment
 execute if score @s kt.reroll_augment_timer matches -1 run tag @s remove kt.economy_augment

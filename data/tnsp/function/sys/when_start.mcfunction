@@ -21,3 +21,5 @@ tag @a remove kt.augment9_size_up
 tag @a remove kt.augment9_size_down
 tag @a remove kt.augment9_mp
 tag @a remove kt.augment9_speed
+
+function tnsp:game/sidebar/set_sidebar

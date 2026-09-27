@@ -4,4 +4,4 @@
 #
 # @within func tnsp:manage/damage/death
 
-scoreboard players add @s kt.gold 100
+scoreboard players add @s kt.gold 2000

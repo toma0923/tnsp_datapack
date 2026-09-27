@@ -31,6 +31,17 @@ execute as @a[tag=hit] if score @s health matches ..0 run function tnsp:manage/d
 execute as @n[tag=actor,tag=kt.augment1,tag=kt.damage_buff_tmp1] run function tnsp:augment/augment1
 execute as @n[tag=actor,tag=kt.augment5,tag=kt.damage_buff_tmp5] run function tnsp:augment/augment5
 
+# ミッション処理
+$execute store result score $tech_num kt.util run data get storage kt.my_dat tech_num.$(tech)
+execute if score $tech_num kt.util matches 10 if entity @a[tag=hit] as @n[tag=actor,scores={kt.mission_num=0}] at @s run function tnsp:mission/acheive_mission {mission_num:0}
+execute if score $tech_num kt.util matches 5 if entity @a[tag=hit] as @n[tag=actor,scores={kt.mission_num=1}] at @s run function tnsp:mission/acheive_mission {mission_num:1}
+execute if score $tech_num kt.util matches 4 if entity @a[tag=hit] as @n[tag=actor,scores={kt.mission_num=2}] at @s run function tnsp:mission/acheive_mission {mission_num:2}
+execute if score $tech_num kt.util matches 11 if entity @a[tag=hit] as @n[tag=actor,scores={kt.mission_num=3}] at @s run function tnsp:mission/acheive_mission {mission_num:3}
+execute if score $tech_num kt.util matches 12 if entity @a[tag=hit] as @n[tag=actor,scores={kt.mission_num=4}] at @s run function tnsp:mission/acheive_mission {mission_num:4}
+execute if score $tech_num kt.util matches 9 if entity @a[tag=hit] as @n[tag=actor,scores={kt.mission_num=5}] at @s run function tnsp:mission/acheive_mission {mission_num:5}
+$scoreboard players operation @a[tag=actor] kt.mission_damage += $(tech) damage
+execute as @n[tag=actor,scores={kt.mission_num=9}] if score @s kt.mission_damage matches 3000.. at @s run function tnsp:mission/acheive_mission {mission_num:9}
+
 #ダメージのスコアに0.0002をかけダメージを与える
 $execute store result storage tnsp:manage damage float 0.0002 run scoreboard players get $(tech) damage
 execute as @e[tag=hit] at @s run function tnsp:manage/damage/check with storage tnsp:manage

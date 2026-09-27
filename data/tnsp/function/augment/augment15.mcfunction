@@ -4,7 +4,7 @@
 #
 # @within func tnsp:manage/damage/death
 
-scoreboard players add @s kt.gold 100
+scoreboard players add @s kt.gold 2000
 
 execute store result score $random kt.util run random value 0..1
 execute if score $random kt.util matches 0 run loot replace entity @n[tag=kt.for_reroll_augment] weapon loot tnsp:battle_augments

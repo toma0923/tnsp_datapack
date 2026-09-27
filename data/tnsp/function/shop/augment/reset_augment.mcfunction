@@ -1,4 +1,4 @@
-#> tnsp:shop/reset_augment
+#> tnsp:shop/augment/reset_augment
 #
 # 所持オーグメントのtag削除
 #

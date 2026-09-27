@@ -1,10 +1,10 @@
-#> tnsp:shop/reroll_augment3
+#> tnsp:shop/augment/reroll_augment3
 #
 # オーグメントをリロールする
 #
-# @within func tnsp:shop/reroll_augment2
+# @within func tnsp:shop/augment/reroll_augment2
 
-summon armor_stand 0 0 0 {Marker:1b,Invisible:1b,Tags:[kt.for_reroll_augment]}
+summon armor_stand 0 -60 0 {Marker:1b,Invisible:1b,Tags:[kt.for_reroll_augment]}
 $item replace entity @n[tag=kt.for_reroll_augment] weapon from entity @s container.$(slot)
 data modify entity @n[tag=kt.for_reroll_augment] equipment.mainhand.components."minecraft:custom_data".battle_augment set value 0
 data modify entity @n[tag=kt.for_reroll_augment] equipment.mainhand.components."minecraft:custom_data".economy_augment set value 0

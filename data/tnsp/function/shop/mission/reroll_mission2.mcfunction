@@ -1,8 +1,8 @@
-#> tnsp:shop/reroll_mission2
+#> tnsp:shop/mission/reroll_mission2
 #
 # ミッションをリロールする
 #
-# @within func tnsp:shop/reroll_mission
+# @within func tnsp:shop/mission/reroll_mission
 
 summon armor_stand ~ ~ ~ {equipment:{mainhand:{id:"minecraft:paper",count:1,components:{"minecraft:custom_name":{"bold":true,"color":"yellow","italic":false,"text":"任務"},custom_data:{"shop":1b}}}},Tags:["kt.reroll_mission_armor_stand"]}
 

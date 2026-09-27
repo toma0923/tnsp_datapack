@@ -1,8 +1,8 @@
-#> tnsp:shop/check_dup_aug
+#> tnsp:shop/augment/check_dup_aug
 #
 # オーグメントのリロールで重複を検知
 #
-# @within func tnsp:shop/reroll_augment3
+# @within func tnsp:shop/augment/reroll_augment3
 
 $execute unless entity @s[tag=kt.augment$(augment_num)] run return 0
 

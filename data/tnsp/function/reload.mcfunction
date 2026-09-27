@@ -34,6 +34,7 @@ scoreboard objectives add range dummy
 
 #数字のスコア
 scoreboard objectives add number dummy
+scoreboard players set 1 number 1
 scoreboard players set 3 number 3
 scoreboard players set 5 number 5
 scoreboard players set 6 number 6
@@ -62,6 +63,7 @@ scoreboard objectives add look_x dummy
 scoreboard objectives add look_y dummy
 scoreboard objectives add look_z dummy
 
+gamerule announceAdvancements false
 
 #分身
 function tnsp:sys/init

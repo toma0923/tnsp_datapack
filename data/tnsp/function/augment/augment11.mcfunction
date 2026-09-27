@@ -4,6 +4,6 @@
 #
 # @within func tnsp:manage/damage/do
 
-$scoreboard players operation $augment11_tmp damage = $(tech) damage
-scoreboard players operation $augment11_tmp damage /= 10 number
-scoreboard players operation @s kt.gold += $augment11_tmp damage
+$execute store result storage kt.my_dat gold int 2 run scoreboard players get $(tech) damage
+data modify storage kt.my_dat fact set value "オーグメント効果"
+function tnsp:shop/grants_gold with storage kt.my_dat
